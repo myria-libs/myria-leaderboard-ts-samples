@@ -1,0 +1,24 @@
+{
+  "name": "myria-leaderboard-ts-samples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "create-leaderboard": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-leaderboard.ts"
+  },
+  "devDependencies": {
+    "@starkware-industries/starkware-crypto-utils": "^0.0.2",
+    "@types/node": "^18.0.6",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
+    "myria-core-sdk": "0.0.246-game-support-v24",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@myria/leaderboard-ts-sdk": "^0.0.4",
+    "uuidv4": "^6.2.13"
+  }
+}
