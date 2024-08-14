@@ -34,8 +34,8 @@ Rename the`.env.example` file into `.env` and provide the required configuration
 
 ```
 # common
-STARK_KEY=                <public key of the owner's Ethereum wallet>
-DEVELOPER_API_KEY=        <private key of the owner's Ethereum wallet>
+STARK_KEY=                <Stark Public Key which is generated for Myria Wallet>
+DEVELOPER_API_KEY=        <Developer API Key>
 
 ## Running the app
 
