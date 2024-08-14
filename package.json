@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --build tsconfig.json",
-    "create-leaderboard": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-leaderboard.ts"
+    "create-leaderboard": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-leaderboard.ts",
+    "delete-leaderboard": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/delete-leaderboard.ts"
   },
   "devDependencies": {
     "@starkware-industries/starkware-crypto-utils": "^0.0.2",
@@ -18,7 +19,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@myria/leaderboard-ts-sdk": "^0.0.4",
+    "@myria/leaderboard-ts-sdk": "^0.0.5",
     "uuidv4": "^6.2.13"
   }
 }
