@@ -12,7 +12,7 @@ import { LeaderboardManager, InitLeaderboardParams } from '@myria/leaderboard-ts
     };
       
     const leaderboardManager = new LeaderboardManager(initLeaderboardParams);
-    const leaderboardId = 55;
+    const leaderboardId = 57;
   
     console.log("Deleting the leaderboard...");
     const deleteLeaderboardResp = await leaderboardManager.deleteLeaderboardById(leaderboardId);
