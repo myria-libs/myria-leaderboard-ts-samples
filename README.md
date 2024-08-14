@@ -35,7 +35,7 @@ Rename the`.env.example` file into `.env` and provide the required configuration
 ```
 # common
 STARK_KEY=                <Stark Public Key which is generated for Myria Wallet>
-DEVELOPER_API_KEY=        <Developer API Key>
+DEVELOPER_API_KEY=        <Developer API Key for access to the leaderboard>
 
 ## Running the app
 
@@ -45,8 +45,6 @@ DEVELOPER_API_KEY=        <Developer API Key>
 
 Create the leaderboard using Developer API Key
 
-Requirements: 
-1. Provide `PRIVATE_KEY` environment variable
 
 Run with npm scripts: 
 
