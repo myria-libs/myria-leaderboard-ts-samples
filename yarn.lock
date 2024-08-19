@@ -1335,10 +1335,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@myria/leaderboard-ts-sdk@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@myria/leaderboard-ts-sdk/-/leaderboard-ts-sdk-0.0.7.tgz#2c3ce41b91878fbbd7995ac4920a748059a468b7"
-  integrity sha512-qC9mnOtBFRZ6cPN+hxVke0DTxZ5H5k6MeB+AOPfPHu5Wtaihw2IWnc3Ky/vwOureVE3VjPm5vwZUeDSUjDQXjg==
+"@myria/leaderboard-ts-sdk@0.0.8-test-v1":
+  version "0.0.8-test-v1"
+  resolved "https://registry.yarnpkg.com/@myria/leaderboard-ts-sdk/-/leaderboard-ts-sdk-0.0.8-test-v1.tgz#12b176331aa0baee582c3405a1a1b14179c2727a"
+  integrity sha512-ByyymJ+sHddT/1ICdM2rayZteyjVCC+JZDRKNWk0U+5jELHTpUo1qc9oHIXNJbdO8R2IXBobRqGVtR9nw0J3qA==
   dependencies:
     "@starkware-industries/starkware-crypto-utils" "0.0.2"
     "@types/bn.js" "^5.1.5"
