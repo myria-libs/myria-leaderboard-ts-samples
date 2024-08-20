@@ -17,10 +17,16 @@ import { LeaderboardManager, InitLeaderboardParams, IPostScoreParams, IPostScore
         leaderboardId,
         items: [
           {
-            score: 240,
+            score: 1,
             displayName: 'userDisplayname',
             userId: '10',
             username: 'Ste7en',
+          },
+          {
+            score: 1000,
+            displayName: 'test-highest-score',
+            userId: '11',
+            username: 'Ste7en-2',
           },
         ],
       };
