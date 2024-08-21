@@ -9,7 +9,8 @@
     "delete-leaderboard": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/delete-leaderboard.ts",
     "post-score": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/post-scores-by-leaderboard-id.ts",
     "get-scores-by-leaderboard-id": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-scores-by-leaderboard-id.ts",
-    "get-scores-by-user-id": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-scores-by-leaderboard-and-user-id.ts"
+    "get-scores-by-user-id": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-scores-by-leaderboard-and-user-id.ts",
+    "get-leaderboards": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-leaderboards.ts"
   },
   "devDependencies": {
     "@starkware-industries/starkware-crypto-utils": "^0.0.2",
@@ -22,7 +23,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@myria/leaderboard-ts-sdk": "0.0.9",
+    "@myria/leaderboard-ts-sdk": "0.0.10",
     "uuidv4": "^6.2.13"
   }
 }
