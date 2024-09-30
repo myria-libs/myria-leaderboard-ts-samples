@@ -14,13 +14,13 @@ import { LeaderboardManager, InitLeaderboardParams, LeaderboardData, CreateLeade
     const leaderboardManager = new LeaderboardManager(initLeaderboardParams);
   
     const leaderboardParams: CreateLeaderboardParams = {
-        name: 'Developer Test Leaderboard',          // The name of your leaderboard
+        name: 'Developer Leaderboard Test Unity',          // The name of your leaderboard
         description: 'A test leaderboard', // A brief description of your leaderboard
         gameName: 'Test Game',             // The name of your game
         livePeriodInDays: 10,              // The duration for each leaderboard period
         totalPeriods: 5,                   // The total number of periods for the leaderboard
         updateScoreStrategy: 'ACCUMULATE', // Strategy for updating scores
-        availableAt: '2024-08-25',         // Specify when the leaderboard becomes available
+        availableAt: '2024-08-28T08:11:24.230Z',         // Specify when the leaderboard becomes available
         enableMetadata: false,             // Optional: Enable metadata if needed
       };
   

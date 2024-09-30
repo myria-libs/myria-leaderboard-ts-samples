@@ -1,4 +1,5 @@
 
+import { EnvTypes } from "myria-core-sdk/dist/types";
 import config from "../config";
 import { LeaderboardManager, InitLeaderboardParams, IQueryLeaderboardsParams } from '@myria/leaderboard-ts-sdk';
   
