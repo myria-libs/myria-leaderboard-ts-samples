@@ -23,7 +23,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@myria/leaderboard-ts-sdk": "0.0.10",
+    "@myria/leaderboard-ts-sdk": "0.0.11-test-v1",
     "uuidv4": "^6.2.13"
   }
 }
