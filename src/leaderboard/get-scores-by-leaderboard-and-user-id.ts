@@ -1,6 +1,6 @@
 
 import config from "../config";
-import { LeaderboardManager, InitLeaderboardParams, IQueryScoreByLeaderboardAndUserIdParams } from '@myria/leaderboard-ts-sdk';
+import { LeaderboardManager, InitLeaderboardParams, IQueryScoreByPlayerParams } from '@myria/leaderboard-ts-sdk';
 
 (async (): Promise<void> => {
     const environment = config.env;
@@ -12,14 +12,14 @@ import { LeaderboardManager, InitLeaderboardParams, IQueryScoreByLeaderboardAndU
     };
 
     const leaderboardManager = new LeaderboardManager(initLeaderboardParams);
-    const leaderboardId = 62;
-    const queryScores: IQueryScoreByLeaderboardAndUserIdParams = {
+    const leaderboardId = 111;
+    const queryScores: IQueryScoreByPlayerParams = {
         leaderboardId,
-        userId: "11"
+        userId: "11-test"
     };
 
     console.log("Get score by the leaderboard ID and user ID...");
-    const queryScoreResp = await leaderboardManager.getScoresByLeaderboardIdAndUserId(queryScores);
+    const queryScoreResp = await leaderboardManager.getScoresByPlayerId(queryScores);
 
     console.log(`Get score in leaderboard ${leaderboardId} and userID response:`, queryScoreResp);
     console.log(JSON.stringify(queryScoreResp.data, null, 2));
