@@ -16,23 +16,23 @@ import { LeaderboardManager, InitLeaderboardParams, IPostScoreParams, IPostScore
     const postNewScoreParams: IPostScoreParams = {
         leaderboardId,
         items: [
+          // {
+          //   score: 2,
+          //   displayName: 'userDisplayname-test-1',
+          //   userId: '11-test',
+          //   username: "11-test-update"
+          // },
           {
-            score: 11,
-            displayName: 'userDisplayname',
+            score: 0,
             userId: '11',
-            username: 'TestUser11',
           },
           {
             score: 12,
-            displayName: 'test-highest-score',
             userId: '12',
-            username: 'TestUser12',
           },
           {
             score: 13,
-            displayName: 'userDisplayname',
             userId: '13',
-            username: 'TestUser13',
           },
           {
             score: 14,
@@ -80,8 +80,14 @@ import { LeaderboardManager, InitLeaderboardParams, IPostScoreParams, IPostScore
       };
   
     console.log("Post score to the leaderboard...");
-    const postScoreResp: APIResponseType<IPostScoreResponse> = await leaderboardManager.postScoreByLeaderboardId(postNewScoreParams)
+
+    try {
+      const postScoreResp: APIResponseType<IPostScoreResponse> = await leaderboardManager.postPlayerScore(postNewScoreParams)
   
-    console.log("Post leaderboard response:", postScoreResp.data);
-    console.log(JSON.stringify(postScoreResp.data.failed, null, 2));
+      console.log("Post leaderboard response:", postScoreResp.data);
+      console.log(JSON.stringify(postScoreResp.data.failed, null, 2));
+    } catch (error: any) {
+      console.log('Error =>', error);
+    }
+    
   })();
