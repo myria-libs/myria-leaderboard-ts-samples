@@ -12,7 +12,8 @@
     "post-score": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/post-scores-by-leaderboard-id.ts",
     "get-scores-by-leaderboard-id": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-scores-by-leaderboard-id.ts",
     "get-scores-by-user-id": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-scores-by-leaderboard-and-user-id.ts",
-    "get-leaderboards": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-leaderboards.ts"
+    "get-leaderboards": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-leaderboards.ts",
+    "get-leaderboard-details": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-rewards-config.ts"
   },
   "devDependencies": {
     "@starkware-industries/starkware-crypto-utils": "^0.0.2",
