@@ -34,7 +34,6 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
         ]
     }
     const leaderboardParams: RewardDistributionConfigParams = {
-        developerApiKey: developerApiKey,
         leaderboardId: "176",
         rewardConfig: rewardDistributionConfig
     };

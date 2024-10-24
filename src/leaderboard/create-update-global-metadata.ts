@@ -14,7 +14,6 @@ import { LeaderboardManager, InitLeaderboardParams, SetGameMetadataParams, SetGl
     const leaderboardManager = new LeaderboardManager(initLeaderboardParams);
 
     const metadataParams: SetGlobalMetadataParams = {
-        developerApiKey: developerApiKey,
         leaderboardId: 138,
         gameMetadata: {
             test: 'game_metadata',

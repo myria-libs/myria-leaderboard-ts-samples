@@ -14,7 +14,6 @@ import { LeaderboardManager, InitLeaderboardParams,SetConfigMetadataParams } fro
     const leaderboardManager = new LeaderboardManager(initLeaderboardParams);
 
     const metadataParams: SetConfigMetadataParams = {
-        developerApiKey: developerApiKey,
         leaderboardId: 138,
         configMetadata: {
             test: 'config_metadata',
