@@ -1,6 +1,6 @@
 
 import config from "../config";
-import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigParams, RewardDistribution, DistributionType, GetLeaderboardDetailsInfo } from '@myria/leaderboard-ts-sdk';
+import { LeaderboardManager, InitLeaderboardParams, GetLeaderboardDetailsInfo } from '@myria/leaderboard-ts-sdk';
   
   (async (): Promise<void> => {
     const environment = config.env;
@@ -15,7 +15,6 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
 
     const leaderboardParams: GetLeaderboardDetailsInfo = {
         leaderboardIdOrName: "176",
-        developerApiKey
     };
   
     console.log("Get leaderboard details with rewards config and metadata...");
