@@ -15,7 +15,8 @@
     "get-leaderboards": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-leaderboards.ts",
     "get-leaderboard-details": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-rewards-config.ts",
     "create-update-game-metadata": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-update-game-metadata.ts",
-    "create-update-config-metadata": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-update-config-metadata.ts"
+    "create-update-config-metadata": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-update-config-metadata.ts",
+    "create-update-global-metadata": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-update-global-metadata.ts"
   },
   "devDependencies": {
     "@starkware-industries/starkware-crypto-utils": "^0.0.2",
