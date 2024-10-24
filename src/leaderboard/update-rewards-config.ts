@@ -15,12 +15,12 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
 
     const rewardDistributionConfig: RewardDistribution = {
         distributionType: DistributionType.PERCENTAGE,
-        period: 1,
+        period: 4,
         isApplyAllPeriods: false,
         rewardPoolAmount: 1000,
         items: [
             {
-                id: "121",
+                id: "124",
                 name: 'Week 1', 
                 rank: {
                     min: 1,
