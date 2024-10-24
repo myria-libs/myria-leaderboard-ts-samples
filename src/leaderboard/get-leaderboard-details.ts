@@ -18,10 +18,10 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
         developerApiKey
     };
   
-    console.log("Get leaderboard details with rewards config...");
-    const leaderboardRewardConfigResp = await leaderboardManager.getLeaderboardDetailsInfo(leaderboardParams);
+    console.log("Get leaderboard details with rewards config and metadata...");
+    const leaderboardDetailsInfo = await leaderboardManager.getLeaderboardDetailsInfo(leaderboardParams);
   
     console.log("Get leaderboard details:");
-    console.log(JSON.stringify(leaderboardRewardConfigResp, null, 2));
+    console.log(JSON.stringify(leaderboardDetailsInfo, null, 2));
   })();
   

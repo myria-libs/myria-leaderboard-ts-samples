@@ -14,13 +14,13 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
     const leaderboardManager = new LeaderboardManager(initLeaderboardParams);
 
     const rewardDistributionConfig: RewardDistribution = {
-        distributionType: DistributionType.FIXED,
-        period: 2,
-        isApplyAllPeriods: true,
-        rewardPoolAmount: 1000,
+        distributionType: DistributionType.PERCENTAGE,
+        period: 1,
+        isApplyAllPeriods: false,
+        rewardPoolAmount: 1300,
         items: [
             {
-                name: '2000 MYRIA', 
+                name: 'Distribution Week 1 - Period 1 only', 
                 rank: {
                     min: 1,
                     max: 10
@@ -34,7 +34,7 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
         ]
     }
     const leaderboardParams: RewardDistributionConfigParams = {
-        leaderboardId: "176",
+        leaderboardId: "138",
         rewardConfig: rewardDistributionConfig
     };
   
@@ -42,6 +42,7 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
     const leaderboardRewardConfigResp = await leaderboardManager.createRewardDistributionConfig(leaderboardParams);
   
     console.log("Creating reward config of leaderboard response:");
+    console.log('leaderboardRewardConfigResp', leaderboardRewardConfigResp.data);
     console.log(JSON.stringify(leaderboardRewardConfigResp, null, 2));
   })();
   

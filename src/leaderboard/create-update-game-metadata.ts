@@ -23,9 +23,10 @@ import { LeaderboardManager, InitLeaderboardParams, SetGameMetadataParams } from
     };
   
     console.log("Creating game metadata for the leaderboard...");
-    const leaderboardRewardConfigResp = await leaderboardManager.setGameMetadata(metadataParams);
+    const gameMetadataResp = await leaderboardManager.setGameMetadata(metadataParams);
   
     console.log("Creating game metadata for leaderboard response:");
-    console.log(JSON.stringify(leaderboardRewardConfigResp, null, 2));
+    console.log("gameMetadataResp:", gameMetadataResp.gameMetadata);
+    console.log(JSON.stringify(gameMetadataResp, null, 2));
   })();
   

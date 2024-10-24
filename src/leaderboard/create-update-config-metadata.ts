@@ -23,9 +23,10 @@ import { LeaderboardManager, InitLeaderboardParams,SetConfigMetadataParams } fro
     };
   
     console.log("Creating config metadata for the leaderboard...");
-    const leaderboardRewardConfigResp = await leaderboardManager.setConfigMetadata(metadataParams);
+    const configMetadataResp = await leaderboardManager.setConfigMetadata(metadataParams);
   
     console.log("Creating config metadata for leaderboard response:");
-    console.log(JSON.stringify(leaderboardRewardConfigResp, null, 2));
+    console.log("configMetadataResp:", configMetadataResp.configMetadata);
+    console.log(JSON.stringify(configMetadataResp, null, 2));
   })();
   

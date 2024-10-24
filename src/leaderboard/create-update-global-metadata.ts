@@ -30,9 +30,10 @@ import { LeaderboardManager, InitLeaderboardParams, SetGameMetadataParams, SetGl
     };
   
     console.log("Creating global metadata for the leaderboard...");
-    const leaderboardRewardConfigResp = await leaderboardManager.setGlobalMetadata(metadataParams);
+    const globalMetadataResp = await leaderboardManager.setGlobalMetadata(metadataParams);
   
     console.log("Creating global metadata for leaderboard response:");
-    console.log(JSON.stringify(leaderboardRewardConfigResp, null, 2));
+    console.log('globalMetadataResp => ', globalMetadataResp.configMetadata)
+    console.log(JSON.stringify(globalMetadataResp, null, 2));
   })();
   
