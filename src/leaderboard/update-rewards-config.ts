@@ -20,8 +20,8 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
         rewardPoolAmount: 1000,
         items: [
             {
-                id: "115",
-                name: '2000 MYRIA', 
+                id: "121",
+                name: 'Week 1', 
                 rank: {
                     min: 1,
                     max: 10
@@ -41,6 +41,7 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
     };
   
     console.log("Update reward config for the leaderboard...");
+    console.log('rewardDistributionConfig => ', JSON.stringify(rewardDistributionConfig));
     const leaderboardRewardConfigResp = await leaderboardManager.updateRewardDistributionConfig(leaderboardParams);
   
     console.log("Update reward config of leaderboard response:");
