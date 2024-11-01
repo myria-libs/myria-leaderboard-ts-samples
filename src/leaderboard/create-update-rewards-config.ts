@@ -1,6 +1,6 @@
 
+import { DistributionType, InitLeaderboardParams, LeaderboardManager, RewardDistribution, RewardDistributionConfigParams } from '@myria/leaderboard-ts-sdk';
 import config from "../config";
-import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigParams, RewardDistribution, DistributionType } from '@myria/leaderboard-ts-sdk';
   
   (async (): Promise<void> => {
     const environment = config.env;
@@ -39,7 +39,7 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
     };
   
     console.log("Creating reward config for the leaderboard...");
-    const leaderboardRewardConfigResp = await leaderboardManager.createRewardDistributionConfig(leaderboardParams);
+    const leaderboardRewardConfigResp = await leaderboardManager.createOrUpdateRewardDistributionConfig(leaderboardParams);
   
     console.log("Creating reward config of leaderboard response:");
     console.log('leaderboardRewardConfigResp', leaderboardRewardConfigResp.data);
