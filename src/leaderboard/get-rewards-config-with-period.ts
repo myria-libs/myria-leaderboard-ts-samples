@@ -15,7 +15,7 @@ import config from "../config";
 
     const leaderboardParams: GetRewardsByPeriod = {
         leaderboardIdOrName: "138",
-        period: 1
+        period: 3
     };
   
     console.log("Creating reward config for the leaderboard...");

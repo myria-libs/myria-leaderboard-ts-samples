@@ -15,12 +15,12 @@ import config from "../config";
 
     const rewardDistributionConfig: RewardDistribution = {
         distributionType: DistributionType.PERCENTAGE,
-        period: 2,
-        isApplyRewardAllPeriods: true,
-        rewardPoolAmount: 1300,
+        period: 3,
+        isApplyRewardAllPeriods: false,
+        rewardPoolAmount: 1000,
         items: [
             {
-                name: 'Distribution Period 1 Test', 
+                name: 'Distribution Period 3 Test', 
                 rank: {
                     min: 1,
                     max: 10
@@ -31,30 +31,6 @@ import config from "../config";
                     amount: "100"
                 }
             },
-            {
-                name: 'Distribution Period 1 Test', 
-                rank: {
-                    min: 11,
-                    max: 20
-                },
-                detail: {
-                    tokenAddress: '0x83a795E1E91560Aae4207fDae9199d384f11D9d2',
-                    type: 'ERC20',
-                    amount: "100"
-                }
-            },
-            {
-                name: 'Distribution Period 1 Test', 
-                rank: {
-                    min: 21,
-                    max: 30
-                },
-                detail: {
-                    tokenAddress: '0x83a795E1E91560Aae4207fDae9199d384f11D9d2',
-                    type: 'ERC20',
-                    amount: "100"
-                }
-            }
         ]
     }
     const leaderboardParams: RewardDistributionConfigParams = {

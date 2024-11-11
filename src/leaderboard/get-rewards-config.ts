@@ -17,11 +17,11 @@ import config from "../config";
         leaderboardIdOrName: "138",
     };
   
-    console.log("Creating reward config for the leaderboard...");
+    console.log("Get reward config for the leaderboard...");
     const leaderboardRewardConfigResp = await leaderboardManager.getRewardDistributionInfo(leaderboardParams);
   
-    console.log("Creating reward config of leaderboard response:");
-    console.log('leaderboardRewardConfigResp', leaderboardRewardConfigResp.rewards);
+    console.log("Get reward config of leaderboard response:");
+    console.log('leaderboardRewardConfigResp', leaderboardRewardConfigResp.data);
     console.log(JSON.stringify(leaderboardRewardConfigResp, null, 2));
   })();
   
