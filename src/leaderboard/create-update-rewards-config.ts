@@ -15,12 +15,12 @@ import config from "../config";
 
     const rewardDistributionConfig: RewardDistribution = {
         distributionType: DistributionType.PERCENTAGE,
-        period: 3,
+        period: 11,
         isApplyRewardAllPeriods: false,
         rewardPoolAmount: 1000,
         items: [
             {
-                name: 'Distribution Period 3 Test', 
+                name: 'Distribution Period 3 Test 1', 
                 rank: {
                     min: 1,
                     max: 10
@@ -28,13 +28,25 @@ import config from "../config";
                 detail: {
                     tokenAddress: '0x83a795E1E91560Aae4207fDae9199d384f11D9d2',
                     type: 'ERC20',
-                    amount: "100"
+                    amount: "1000"
+                }
+            },
+            {
+                name: 'Distribution Period 3 Test 2', 
+                rank: {
+                    min: 11,
+                    max: 20
+                },
+                detail: {
+                    tokenAddress: '0x83a795E1E91560Aae4207fDae9199d384f11D9d2',
+                    type: 'ERC20',
+                    amount: "1000"
                 }
             },
         ]
     }
     const leaderboardParams: RewardDistributionConfigParams = {
-        leaderboardId: "138",
+        leaderboardId: "116",
         rewardConfig: rewardDistributionConfig
     };
   
@@ -42,7 +54,7 @@ import config from "../config";
     const leaderboardRewardConfigResp = await leaderboardManager.createOrUpdateRewardDistributionConfig(leaderboardParams);
   
     console.log("Creating reward config of leaderboard response:");
-    console.log('leaderboardRewardConfigResp', leaderboardRewardConfigResp.data);
+    console.log('leaderboardRewardConfigResp', leaderboardRewardConfigResp);
     console.log(JSON.stringify(leaderboardRewardConfigResp, null, 2));
   })();
   
