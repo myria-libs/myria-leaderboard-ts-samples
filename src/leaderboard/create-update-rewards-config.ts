@@ -1,6 +1,6 @@
 
+import { DistributionType, InitLeaderboardParams, LeaderboardManager, RewardDistribution, RewardDistributionConfigParams } from '@myria/leaderboard-ts-sdk';
 import config from "../config";
-import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigParams, RewardDistribution, DistributionType } from '@myria/leaderboard-ts-sdk';
   
   (async (): Promise<void> => {
     const environment = config.env;
@@ -8,19 +8,19 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
     const developerApiKey = config.developer_api_key;
     const initLeaderboardParams: InitLeaderboardParams = {
         env: environment, // Use your desired environment type (STAGING / PREPROD / PROD)
-        apiKey: developerApiKey, // Your Developer API Key
+        apiKey: developerApiKey
     };
       
     const leaderboardManager = new LeaderboardManager(initLeaderboardParams);
 
     const rewardDistributionConfig: RewardDistribution = {
         distributionType: DistributionType.PERCENTAGE,
-        period: 1,
-        isApplyAllPeriods: false,
-        rewardPoolAmount: 1300,
+        period: 3,
+        isApplyRewardAllPeriods: false,
+        rewardPoolAmount: 1000,
         items: [
             {
-                name: 'Distribution Week 1 - Period 1 only', 
+                name: 'Distribution Period 3 Test', 
                 rank: {
                     min: 1,
                     max: 10
@@ -30,7 +30,7 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
                     type: 'ERC20',
                     amount: "100"
                 }
-            }
+            },
         ]
     }
     const leaderboardParams: RewardDistributionConfigParams = {
@@ -39,7 +39,7 @@ import { LeaderboardManager, InitLeaderboardParams, RewardDistributionConfigPara
     };
   
     console.log("Creating reward config for the leaderboard...");
-    const leaderboardRewardConfigResp = await leaderboardManager.createRewardDistributionConfig(leaderboardParams);
+    const leaderboardRewardConfigResp = await leaderboardManager.createOrUpdateRewardDistributionConfig(leaderboardParams);
   
     console.log("Creating reward config of leaderboard response:");
     console.log('leaderboardRewardConfigResp', leaderboardRewardConfigResp.data);
