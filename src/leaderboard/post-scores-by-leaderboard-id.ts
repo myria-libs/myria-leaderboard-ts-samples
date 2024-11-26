@@ -40,42 +40,6 @@ import { LeaderboardManager, InitLeaderboardParams, IPostScoreParams, IPostScore
             userId: '14',
             username: 'TestUser14',
           },
-          {
-            score: 15,
-            displayName: 'userDisplayname',
-            userId: '15',
-            username: 'TestUser15',
-          },
-          {
-            score: 16,
-            displayName: 'test-highest-score',
-            userId: '16',
-            username: 'TestUser16',
-          },
-          {
-            score: 17,
-            displayName: 'userDisplayname',
-            userId: '17',
-            username: 'TestUser17',
-          },
-          {
-            score: 18,
-            displayName: 'test-highest-score',
-            userId: '18',
-            username: 'TestUser18',
-          },
-          {
-            score: 19,
-            displayName: 'userDisplayname',
-            userId: '19',
-            username: 'TestUser19',
-          },
-          {
-            score: 20,
-            displayName: 'test-highest-score',
-            userId: '20',
-            username: 'TestUser20',
-          }
         ],
       };
   

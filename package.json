@@ -18,7 +18,9 @@
     "create-update-global-metadata": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/create-update-global-metadata.ts",
     "get-rewards-in-current-period": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-rewards-config-in-current-period.ts",
     "get-rewards-with-period": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-rewards-config-with-period.ts",
-    "get-rewards-config-by-leaderboard": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-rewards-config.ts"
+    "get-rewards-config-by-leaderboard": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-rewards-config.ts",
+    "get-simplified-reward-config": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/get-simplified-reward-config.ts",
+    "update-user-info": "ts-node -r dotenv/config -r tsconfig-paths/register ./src/leaderboard/update-user-info.ts"
   },
   "devDependencies": {
     "@starkware-industries/starkware-crypto-utils": "^0.0.2",
@@ -31,7 +33,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@myria/leaderboard-ts-sdk": "0.0.13-test-v15",
+    "@myria/leaderboard-ts-sdk": "0.0.14-test-v7",
     "uuidv4": "^6.2.13"
   }
 }
